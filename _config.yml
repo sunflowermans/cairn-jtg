@@ -14,6 +14,10 @@ plugins:
   - jekyll-hover-popup # preview popup windows for internal links
   - jekyll-image-links # hyperlinked maps
   - rpg-callouts # additional callout formatting options
+
+# Exclude H1 page titles from the sidebar TOC to avoid duplicate entries; keep section headings.
+sidebar_toc_levels: "2..4"
+
 include:
   - js
 
@@ -65,6 +69,5 @@ sass:
 # If you want to ignore for faster local builds
 #exclude: 
 #  - /resources
-#  - /first-party
 #  - /localization
 #  - /hacks
